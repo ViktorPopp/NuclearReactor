@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 105147552019066005}
   - component: {fileID: 1476361403407609766}
   m_Layer: 0
-  m_Name: Uranium
+  m_Name: Uranium-235
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

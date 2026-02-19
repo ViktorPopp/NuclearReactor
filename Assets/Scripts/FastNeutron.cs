@@ -1,12 +1,14 @@
 using UnityEngine;
 
-public class ThermalNeutron : MonoBehaviour
+public class FastNeutron : MonoBehaviour
 {
     [SerializeField] private float speed;
+    public float hitsLeft = 18;
     private new Transform transform;
 
     private void Start()
     {
+        hitsLeft = 18;
         transform = GetComponent<Transform>();
     }
 
