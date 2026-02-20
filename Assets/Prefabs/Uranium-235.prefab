@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a68f642788165909685f491f0048c167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  thermalNeutron: {fileID: 2750891414561818695, guid: c40e52a4dbe0d587e8b77bfa92f3658d, type: 3}
+  fastNeutron: {fileID: 3216364211065381008, guid: 1678bd376a5d82fc09af7712060ff4bb, type: 3}
 --- !u!58 &105147552019066005
 CircleCollider2D:
   m_ObjectHideFlags: 0
