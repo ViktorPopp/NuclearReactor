@@ -9,7 +9,7 @@ public class Water : MonoBehaviour
         if (collision.gameObject.CompareTag("FastNeutron"))
         {
             var colScript = collision.gameObject.GetComponent<FastNeutron>();
-            colScript.hitsLeft -= 4;
+            colScript.hitsLeft -= 3;
             if (colScript.hitsLeft <= 0)
             {
                 Instantiate(thermalNeutron, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
