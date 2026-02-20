@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class Water : MonoBehaviour
 {
-    [SerializeField] private float temp;
     public GameObject thermalNeutron;
 
     private void OnTriggerEnter2D(Collider2D collision)
