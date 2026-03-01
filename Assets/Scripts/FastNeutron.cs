@@ -8,7 +8,6 @@ public class FastNeutron : MonoBehaviour
 
     private void Start()
     {
-        hitsLeft = 18;
         transform = GetComponent<Transform>();
     }
 
