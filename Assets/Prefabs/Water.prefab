@@ -139,6 +139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   thermalNeutron: {fileID: 2750891414561818695, guid: c40e52a4dbe0d587e8b77bfa92f3658d, type: 3}
+  uranium: {fileID: 6941755460437373243, guid: 9ffa9915604fb304581a5ddd708c525c, type: 3}
 --- !u!50 &2785741347022290412
 Rigidbody2D:
   serializedVersion: 5

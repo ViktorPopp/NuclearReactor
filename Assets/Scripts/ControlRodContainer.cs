@@ -2,21 +2,21 @@ using UnityEngine;
 
 public class ControlRodContainer : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 1f;
 
     void Update()
     {
-        float moveY = 0f;
+        int count = GameObject.FindGameObjectsWithTag("ThermalNeutron").Length + GameObject.FindGameObjectsWithTag("FastNeutron").Length;
+        Debug.Log(count);
 
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            moveY = 1f;
-        }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            moveY = -1f;
-        }
+        float direction = (count < 40) ? moveSpeed : -moveSpeed;
+        transform.Translate(direction * moveSpeed * Time.deltaTime * Vector3.up);
 
-        transform.Translate(moveSpeed * moveY * Time.deltaTime * Vector3.up);
+        float minY = 0f;
+        float maxY = 10f;
+
+        Vector3 pos = transform.position;
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+        transform.position = pos;
     }
 }
